@@ -1,131 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio de Quentin, étudiant en web développement junior</title>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/style.css" type="text/css" rel="stylesheet">
-    
-  </head>
-  <body>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="style/media_query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quentin Reyes</title>
+</head>
+
+<body>
+    <!-- Header design section -->
     <header>
-        <h1>Developpeur web</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>      
+        <div class="header-nav-bar container flex">
+            <div class="logo">Portfolio</div>
+            <i class='bx bx-menu' id="Menu-card"></i>
+            <nav class="nav-bar-items">
+                <a href="#home-container" id="home" class="active">Home</a>
+                <a href="#about-section" id="about">À propos</a>
+                <a href="#skills-section" id=" skills ">Compétence</a>
+                <a href="#portfolio-div" id="portfolio">Portfolio</a>
+                <a href="#" id=" contact ">Contact</a>
+            </nav>
+        </div>
     </header>
+    <!-- Home design section -->
     <main>
-        <img src="assets/cartoondev.jpg" alt="banner_cartoon" class="img_banner">
-      <section id="about">
-        <div class="information_about">
-          <hr></hr>
-        <h2 class="title_categorie" >Qui suis-je ?</h2>
-        <p> Je m'appelle Quentin, j'ai 28 ans et je suis un développeur full stack junior passionné par la création. J'ai récemment terminé ma formation chez OpenClassrooms de développeur fullstack et je suis maintenant à la recherche d'un emploi dans ce domaine. Avant cela, j'ai étudié le Game design, mais j'ai choisi de me reconvertir en tant que développeur web pour pouvoir vivre ma passion et exercer un métier qui me plaît vraiment. J'aime créer des projets innovants et j'espère avoir la chance de contribuer à des projets excitants à l'avenir.</p>
-        <p><a href="assets/Cvquentinfinal.pdf">Télécharger mon CV</a></p>
-    </div>
-    <div class="img_about">
-        <img src="assets/avatar.jpg" alt="Ma photo">
-    </div>
-      </section>
-      <section id="skills_section">
-        <hr></hr>
-        <h2 class="title_categorie">Compétences</h2>
-        <div class="skills-container">
-          <div class="skill">
-            <img src="assets/html.png" alt="HTML">
-            <p>HTML</p>
-          </div>
-          <div class="skill">
-            <img src="assets/css.png" alt="CSS">
-            <p>CSS</p>
-          </div>
-          <div class="skill">
-            <img src="assets/JS.png" alt="JavaScript">
-            <p>JavaScript</p>
-          </div>
-          <div class="skill">
-            <img src="assets/react.png" alt="React">
-            <p>React</p>
-          </div>
-          <div class="skill">
-            <img src="assets/node.png" alt="Node.js">
-            <p>Node.js</p>
-          </div>
-          <div class="skill">
-            <img src="assets/mongodb.png" alt="MongoDB">
-            <p>MongoDB</p>
-          </div>
-          <div class="skill">
-            <img src="assets/git.png" alt="Git">
-            <p>Git</p>
-          </div>
-          <p> express </p>
-         
-          <div class="skill">
-            <img src="assets/sass.png" alt="Sass">
-            <p>Sass</p>
-          </div>
-        </div>
-        
-        
-      </section>
-      <section id="projects">
-        <hr ></hr>
-        <h2 class="title_categorie">Projects</h2>
-        <div class="gallery">
-          <a href="https://joklak.github.io/projet2Op/">
-            <img src="assets/booki.png" alt="Projet 1">
-            <p class="titreprojet">Transformez une maquette en site web avec HTML & CSS</p>
-          </a>
-          <a href="https://joklak.github.io/Projet3soutenance/">
-            <img src="assets/ohmyfood.png" alt="Projet 2">
-            <p  class="titreprojet">Dynamisez une page web avec des animations CSS</p>
-          </a>
-          <a href="https://joklak.github.io/Projet4final/">
-            <img src="assets/16450043954887_cover small.png" alt="Projet 2">
-            <p  class="titreprojet">Optimisez un site web existant</p>
-          </a>
-          <a href="https://github.com/Joklak/projetJavascript">
-            <img src="assets/kanap.png"alt="Projet 2">
-            <p  class="titreprojet">Construisez un site e-commerce en JavaScript</p>
-          </a>
-          <a href="https://github.com/Joklak/projet6OP">
-            <img src="assets/piquante.png" alt="Projet 2">
-            <p  class="titreprojet">Construisez une API sécurisée pour une application d'avis gastronomiques</p>
-          </a>
-          <a href="https://github.com/Joklak/Projet-7-Op">
-            <img src="assets/kasa.png" alt="Projet 2">
-            <p  class="titreprojet">Créez une application web de location immobilière avec React</p>
-          </a>
-          <!-- Ajouter d'autres projets ici -->
-        </div>
-      </section>
-      <section id="contact">
-        <hr></hr>
-        <h2 class="title_categorie">Contact</h2>
-        <form>
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required>
-          <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" required>
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </section>
-      <footer>   
-       <ul class="footer_color">                    
-             <li class="footerli"><a href="https://github.com/Joklak"><img src="assets/gittransparant.png" alt="Git" class="gitlogofooter"></a> </li>
-             <li class="footerli"><a href="https://www.linkedin.com/in/quentinreyes/"><img src="assets/174857.png" alt="Git" class="gitlogofooter"></a></li>
-      </ul> 
-    </footer>
+        <section class=" head-img-intro flex container " id=" home-container ">
+            <div class="intro-content">
+                <h3 class=" intro-start ">Bonjour</h3>
+                <h2 class=" intro-name ">Quentin Reyes</h2>
+                <h3 class=" intro-last ">Et je suis
+                    <span class=" profession ">
+                        Développeur web
+                    </span>
+                </h3>
+                <p class="intro-main">
+                    Bonjour et bienvenue sur mon portfolio ! Je suis un développeur web passionné, et je suis ravi de vous accueillir ici. Ayant récemment terminé ma formation en tant que développeur full stack avec OpenClassrooms, je possède des connaissances solides dans la création d'applications web innovantes et conviviales.
+                </p>              
+                <div class="resume-links">
+                    <a href="https://drive.google.com/file/d/1Vyu6fi1JzegkNIF5UeKsgLSXwrz0KtKr/view?usp=share_link"
+                        class="cv-resume btn-cls" target="new">Mon CV</a>
+                </div>
+            </div>
+            <div class=" main-img ">
+                <img src=" ./assets/avatarpp.png " alt=" ">
+            </div>
+        </section>
+        <!-- About section -->
+        <section class="section-about" id="">
+            <div class="container flex about-section" id="about-section">
+                <div class=" about-image ">
+                    <img src=" ./assets/web-dev.jpg " alt=" ">
+                </div>
+                <div class=" about-content ">
+                    <h3 class=" heading ">
+                        À propos <span class=" Me ">de moi</span>
+
+                    </h3>
+                    <h2 class=" profession ">Développeur web</h2>
+                    <p class=" intro-about-me ">
+                        Je m'appelle Quentin, j'ai 28 ans et je suis un développeur full stack junior passionné par la création. J'ai récemment terminé ma formation chez OpenClassrooms de développeur fullstack et je suis maintenant à la recherche d'un emploi dans ce domaine. Avant cela, j'ai étudié le Game design, mais j'ai choisi de me reconvertir en tant que développeur web pour pouvoir vivre ma passion et exercer un métier qui me plaît vraiment. J'aime créer des projets innovants et j'espère avoir la chance de contribuer à des projets excitants à l'avenir.
+                    </p>                
+
+                        <div class="btn-cls about-read-more" style="align-items: center;">
+                            <a href="https://github.com/Joklak" class=" read-more ">Mon Github</a>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill  section -->
+
+        <section class="skills" id="skills-section">
+            <div class="container">
+                <div class="heading">
+                    <h2>Mes <span class="Me">Compétence</span></h2>
+                </div>
+                <div class="skills-offfer flex">
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fa-solid fa-code"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>Html & Css</h3>
+                        </div>                   
+                    </div>
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fa-brands fa-github"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>Github</h3>
+                        </div>                            
+                    </div>
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fa-brands fa-js"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>Javascript</h3>
+                        </div>                                            
+                    </div>
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fa-brands fa-react"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>React</h3>
+                        </div>                      
+                    </div>
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fa-solid fa-server"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>MongoDb</h3>
+                        </div>                         
+                    </div>
+                    <div class="Web-development boxes-skills">
+                        <div class="logo"><i class="fab fa-sass"></i>
+                            </i>
+                        </div>
+                        <div class="skills-heading">
+                            <h3>Sass</h3>
+                        </div>                 
+                    </div>                
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+
+    <!-- Portfolio section -->
+
+    <section class="project portfolio" id="portfolio-section-id">
+        <div class="container" id="portfolio-div">
+            <h2 class="heading">Mes <span class="Me">Projets</span></h2>
+            <div class="project-container ">
+                
+                    <div class="box-project"> 
+                    <img src="./assets/booki.png" alt="" srcset="">
+                    <div class="info-layer flex-column info-layer2">
+                        <a href="https://joklak.github.io/projet2Op/">
+                        <h3>Transformez une maquette en site web avec HTML & CSS</h3>       
+                    </a>                
+                    </div>                    
+                </div>
+                <div class="box-project">
+                    <img src="./assets/ohmyfood.png" alt="Logo ohmyfood" >
+                    <div class="info-layer flex-column info-layer1">
+                        <a href="https://joklak.github.io/Projet3soutenance/">
+                        <h3>Dynamisez une page web avec des animations CSS</h3>          
+                        </a>              
+                    </div>
+                </div>
+                <div class="box-project ">
+                    <img src="./assets/16450043954887_cover small.png" alt="Web-development-background picture" >
+                    <div class="info-layer flex-column info-layer2">
+                        <a href="https://joklak.github.io/Projet4final/">
+                        <h3>Optimisez un site web existant</h3>     
+                    </a>                  
+                    </div>
+                </div>
+                <div class="box-project ">
+                    <img src="./assets/kanap.png" alt=" Banniere kanap" >
+                    <div class="info-layer flex-column info-layer2">
+                        <a href="https://github.com/Joklak/projetJavascript">
+                        <h3>Construisez un site e-commerce en JavaScript</h3>       
+                        </a>                 
+                    </div>
+                </div>
+                <div class="box-project ">
+                    <img src="./assets/piquante.png" alt="Logo piquante" >
+                    <div class="info-layer flex-column info-layer2">
+                        <a href="https://github.com/Joklak/projet6OP">
+                        <h3>Construisez une API sécurisée pour une application d'avis gastronomiques</h3>
+                    </a>
+                    </div>
+                </div>
+                <div class="box-project ">
+                    <img src="./assets/accommodation-1-1.jpg" alt="Image appartement" >
+                    <div class="info-layer flex-column info-layer2">
+                        <a href="https://github.com/Joklak/Projet-7-Op">
+                        <h3>Créez une application web de location immobilière avec React</h3>           
+                        </a>             
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="container flex contact-us-container">          
+            <ul class="footer_color">                    
+                <li class="footerli"><a href="https://github.com/Joklak"><img src="assets/gittransparant.png" alt="Git" class="gitlogofooter"></a> </li>
+                <li class="footerli"><a href="https://www.linkedin.com/in/quentinreyes/"><img src="assets/174857.png" alt="Git" class="gitlogofooter"></a></li>
+         </ul>          
+        </div>
+    </section>
+    <div class="script-4-header"></div>
+
+    <script src="./JS/index.js"></script>
+</body>
+
 </html>
